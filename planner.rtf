@@ -1,0 +1,608 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html dir="rtl" lang="ar">\
+<head>\
+  <meta charset="UTF-8">\
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+  <title>\uc0\u1606 \u1592 \u1575 \u1605  \u1573 \u1593 \u1583 \u1575 \u1583  \u1575 \u1604 \u1583 \u1585 \u1608 \u1587  - \u1608 \u1586 \u1575 \u1585 \u1577  \u1575 \u1604 \u1578 \u1585 \u1576 \u1610 \u1577  \u1608 \u1575 \u1604 \u1578 \u1593 \u1604 \u1610 \u1605  \u1602 \u1591 \u1585 </title>\
+  <style>\
+    * \{\
+      box-sizing: border-box;\
+      margin: 0;\
+      padding: 0;\
+    \}\
+    body \{\
+      font-family: Arial, sans-serif;\
+      background-color: #f4f4f9;\
+      padding: 20px;\
+      line-height: 1.6;\
+      direction: rtl;\
+    \}\
+    h1, h3 \{\
+      text-align: center;\
+      color: #2c3e50;\
+    \}\
+    .logo \{\
+      display: block;\
+      margin: 0 auto;\
+      max-width: 150px;\
+      padding: 10px 0;\
+    \}\
+    .container \{\
+      max-width: 1200px;\
+      margin: 0 auto;\
+    \}\
+    .tabs \{\
+      display: flex;\
+      justify-content: center;\
+      margin-bottom: 20px;\
+    \}\
+    .tab \{\
+      padding: 10px 20px;\
+      background: #6c757d;\
+      color: white;\
+      cursor: pointer;\
+      margin: 0 5px;\
+      border-radius: 5px;\
+    \}\
+    .tab.active \{\
+      background: #3498db;\
+    \}\
+    .tab-content \{\
+      display: none;\
+      background: #fff;\
+      padding: 20px;\
+      border-radius: 8px;\
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);\
+    \}\
+    .tab-content.active \{\
+      display: block;\
+    \}\
+    .form-section \{\
+      margin-bottom: 20px;\
+    \}\
+    label \{\
+      display: block;\
+      margin: 10px 0 5px;\
+      font-weight: bold;\
+      color: #2c3e50;\
+    \}\
+    input, textarea, select \{\
+      width: 100%;\
+      padding: 10px;\
+      margin-bottom: 15px;\
+      border: 1px solid #ced4da;\
+      border-radius: 5px;\
+      font-family: Arial, sans-serif;\
+      font-size: 16px;\
+    \}\
+    textarea \{\
+      resize: vertical;\
+      min-height: 100px;\
+    \}\
+    button \{\
+      background-color: #3498db;\
+      color: white;\
+      padding: 10px 20px;\
+      border: none;\
+      border-radius: 5px;\
+      cursor: pointer;\
+      font-family: Arial, sans-serif;\
+      font-size: 16px;\
+      margin: 5px;\
+    \}\
+    button:hover \{\
+      background-color: #2980b9;\
+    \}\
+    button.secondary \{\
+      background-color: #6c757d;\
+    \}\
+    button.secondary:hover \{\
+      background-color: #5a6268;\
+    \}\
+    button.success \{\
+      background-color: #28a745;\
+    \}\
+    button.success:hover \{\
+      background-color: #218838;\
+    \}\
+    .button-group \{\
+      display: flex;\
+      justify-content: center;\
+      margin: 20px 0;\
+    \}\
+    .error-message \{\
+      color: #e74c3c;\
+      margin: 10px 0;\
+      font-size: 14px;\
+      text-align: center;\
+    \}\
+    .plan-card \{\
+      background: #f8f9fa;\
+      padding: 15px;\
+      margin: 10px 0;\
+      border-radius: 5px;\
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);\
+    \}\
+    #output \{\
+      margin-top: 20px;\
+      padding: 20px;\
+      background: #fff;\
+      border-radius: 8px;\
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);\
+      display: none;\
+    \}\
+    #output ol \{\
+      padding-right: 20px;\
+    \}\
+  </style>\
+</head>\
+<body>\
+  <div class="container">\
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAQSURBVHgBAW/5A////wAAAAAABBpGZwAAAABJRU5ErkJggg==" alt="\uc0\u1608 \u1586 \u1575 \u1585 \u1577  \u1575 \u1604 \u1578 \u1585 \u1576 \u1610 \u1577  \u1608 \u1575 \u1604 \u1578 \u1593 \u1604 \u1610 \u1605  \u1602 \u1591 \u1585 " class="logo">\
+    <h1>\uc0\u1606 \u1592 \u1575 \u1605  \u1575 \u1604 \u1573 \u1593 \u1583 \u1575 \u1583  \u1575 \u1604 \u1610 \u1608 \u1605 \u1610  \u1604 \u1604 \u1583 \u1585 \u1608 \u1587 </h1>\
+    \
+    <div class="tabs">\
+      <div class="tab active" onclick="openTab('create-tab')">\uc0\u1582 \u1591 \u1577  \u1580 \u1583 \u1610 \u1583 \u1577 </div>\
+      <div class="tab" onclick="openTab('saved-tab')">\uc0\u1582 \u1591 \u1591 \u1610 </div>\
+    </div>\
+\
+    <div id="create-tab" class="tab-content active">\
+      <div class="form-section">\
+        <h3>\uc0\u1575 \u1604 \u1605 \u1593 \u1604 \u1608 \u1605 \u1575 \u1578  \u1575 \u1604 \u1571 \u1587 \u1575 \u1587 \u1610 \u1577 </h3>\
+        <label for="academicYear">\uc0\u1575 \u1604 \u1593 \u1575 \u1605  \u1575 \u1604 \u1571 \u1603 \u1575 \u1583 \u1610 \u1605 \u1610 :</label>\
+        <input type="text" id="academicYear" placeholder="\uc0\u1605 \u1579 \u1575 \u1604 : 1446/1447">\
+        <label for="date">\uc0\u1575 \u1604 \u1578 \u1575 \u1585 \u1610 \u1582 :</label>\
+        <input type="date" id="date">\
+        <label for="subject">\uc0\u1575 \u1604 \u1605 \u1575 \u1583 \u1577 :</label>\
+        <select id="subject">\
+          <option value="">\uc0\u1575 \u1582 \u1578 \u1585  \u1575 \u1604 \u1605 \u1575 \u1583 \u1577 </option>\
+          <option value="\uc0\u1575 \u1604 \u1604 \u1594 \u1577  \u1575 \u1604 \u1593 \u1585 \u1576 \u1610 \u1577 ">\u1575 \u1604 \u1604 \u1594 \u1577  \u1575 \u1604 \u1593 \u1585 \u1576 \u1610 \u1577 </option>\
+          <option value="\uc0\u1575 \u1604 \u1585 \u1610 \u1575 \u1590 \u1610 \u1575 \u1578 ">\u1575 \u1604 \u1585 \u1610 \u1575 \u1590 \u1610 \u1575 \u1578 </option>\
+          <option value="\uc0\u1575 \u1604 \u1593 \u1604 \u1608 \u1605 ">\u1575 \u1604 \u1593 \u1604 \u1608 \u1605 </option>\
+          <option value="\uc0\u1575 \u1604 \u1583 \u1585 \u1575 \u1587 \u1575 \u1578  \u1575 \u1604 \u1575 \u1580 \u1578 \u1605 \u1575 \u1593 \u1610 \u1577 ">\u1575 \u1604 \u1583 \u1585 \u1575 \u1587 \u1575 \u1578  \u1575 \u1604 \u1575 \u1580 \u1578 \u1605 \u1575 \u1593 \u1610 \u1577 </option>\
+          <option value="\uc0\u1575 \u1604 \u1604 \u1594 \u1577  \u1575 \u1604 \u1573 \u1606 \u1580 \u1604 \u1610 \u1586 \u1610 \u1577 ">\u1575 \u1604 \u1604 \u1594 \u1577  \u1575 \u1604 \u1573 \u1606 \u1580 \u1604 \u1610 \u1586 \u1610 \u1577 </option>\
+          <option value="\uc0\u1575 \u1604 \u1578 \u1585 \u1576 \u1610 \u1577  \u1575 \u1604 \u1573 \u1587 \u1604 \u1575 \u1605 \u1610 \u1577 ">\u1575 \u1604 \u1578 \u1585 \u1576 \u1610 \u1577  \u1575 \u1604 \u1573 \u1587 \u1604 \u1575 \u1605 \u1610 \u1577 </option>\
+        </select>\
+        <label for="grade">\uc0\u1575 \u1604 \u1589 \u1601 :</label>\
+        <input type="text" id="grade" placeholder="\uc0\u1605 \u1579 \u1575 \u1604 : \u1575 \u1604 \u1589 \u1601  \u1575 \u1604 \u1582 \u1575 \u1605 \u1587 ">\
+        <label for="lessonTitle">\uc0\u1593 \u1606 \u1608 \u1575 \u1606  \u1575 \u1604 \u1583 \u1585 \u1587 :</label>\
+        <input type="text" id="lessonTitle" placeholder="\uc0\u1605 \u1579 \u1575 \u1604 : \u1575 \u1604 \u1590 \u1585 \u1576  \u1601 \u1610  \u1575 \u1604 \u1571 \u1593 \u1583 \u1575 \u1583  \u1575 \u1604 \u1593 \u1588 \u1585 \u1610 \u1577 ">\
+        <label for="aiPrompt">\uc0\u1608 \u1589 \u1601  \u1575 \u1604 \u1583 \u1585 \u1587 :</label>\
+        <input type="text" id="aiPrompt" placeholder="\uc0\u1605 \u1579 \u1575 \u1604 : \u1578 \u1583 \u1585 \u1610 \u1587  \u1575 \u1604 \u1603 \u1587 \u1608 \u1585  \u1604 \u1604 \u1589 \u1601  \u1575 \u1604 \u1582 \u1575 \u1605 \u1587 ">\
+      </div>\
+\
+      <div class="form-section">\
+        <h3>\uc0\u1575 \u1604 \u1571 \u1607 \u1583 \u1575 \u1601  \u1575 \u1604 \u1578 \u1593 \u1604 \u1610 \u1605 \u1610 \u1577 </h3>\
+        <label for="objectives">\uc0\u1571 \u1583 \u1582 \u1604  3 \u1571 \u1607 \u1583 \u1575 \u1601  \u1593 \u1604 \u1609  \u1575 \u1604 \u1571 \u1602 \u1604 :</label>\
+        <textarea id="objectives" rows="6" placeholder="\uc0\u1605 \u1579 \u1575 \u1604 :\\n1. \u1571 \u1606  \u1610 \u1601 \u1607 \u1605  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1605 \u1601 \u1607 \u1608 \u1605  \u1575 \u1604 \u1603 \u1587 \u1608 \u1585 \\n2. \u1571 \u1606  \u1610 \u1581 \u1604  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1605 \u1587 \u1575 \u1574 \u1604  \u1580 \u1605 \u1593  \u1575 \u1604 \u1603 \u1587 \u1608 \u1585 \\n3. \u1571 \u1606  \u1610 \u1591 \u1576 \u1602  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1575 \u1604 \u1605 \u1593 \u1585 \u1601 \u1577  \u1601 \u1610  \u1605 \u1608 \u1575 \u1602 \u1601  \u1581 \u1610 \u1575 \u1578 \u1610 \u1577 "></textarea>\
+        <div class="button-group">\
+          <button onclick="generateLocalObjectives()" class="secondary">\uc0\u1578 \u1608 \u1604 \u1610 \u1583  \u1575 \u1604 \u1571 \u1607 \u1583 \u1575 \u1601 </button>\
+          <button onclick="autoFillFields()" class="secondary">\uc0\u1578 \u1593 \u1576 \u1574 \u1577  \u1578 \u1604 \u1602 \u1575 \u1574 \u1610 \u1577 </button>\
+        </div>\
+      </div>\
+\
+      <div class="form-section">\
+        <h3>\uc0\u1578 \u1601 \u1575 \u1589 \u1610 \u1604  \u1575 \u1604 \u1583 \u1585 \u1587 </h3>\
+        <label for="activities">\uc0\u1575 \u1604 \u1571 \u1606 \u1588 \u1591 \u1577 :</label>\
+        <textarea id="activities" rows="4" placeholder="\uc0\u1605 \u1579 \u1575 \u1604 : \u1588 \u1585 \u1581  \u1606 \u1592 \u1585 \u1610 \u1548  \u1581 \u1604  \u1578 \u1605 \u1575 \u1585 \u1610 \u1606  \u1580 \u1605 \u1575 \u1593 \u1610 \u1577 "></textarea>\
+        <label for="resources">\uc0\u1575 \u1604 \u1605 \u1608 \u1575 \u1585 \u1583 :</label>\
+        <input type="text" id="resources" placeholder="\uc0\u1605 \u1579 \u1575 \u1604 : \u1603 \u1578 \u1575 \u1576  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576 \u1548  \u1604 \u1608 \u1581 \u1577  \u1584 \u1603 \u1610 \u1577 ">\
+        <label for="assessment">\uc0\u1575 \u1604 \u1578 \u1602 \u1610 \u1610 \u1605 :</label>\
+        <input type="text" id="assessment" placeholder="\uc0\u1605 \u1579 \u1575 \u1604 : \u1575 \u1582 \u1578 \u1576 \u1575 \u1585  \u1602 \u1589 \u1610 \u1585 \u1548  \u1605 \u1585 \u1575 \u1580 \u1593 \u1577  \u1588 \u1601 \u1607 \u1610 \u1577 ">\
+        <label for="homework">\uc0\u1575 \u1604 \u1608 \u1575 \u1580 \u1576  \u1575 \u1604 \u1605 \u1606 \u1586 \u1604 \u1610 :</label>\
+        <input type="text" id="homework" placeholder="\uc0\u1605 \u1579 \u1575 \u1604 : \u1581 \u1604  5 \u1605 \u1587 \u1575 \u1574 \u1604 ">\
+      </div>\
+\
+      <div class="button-group">\
+        <button onclick="generatePlan()">\uc0\u1573 \u1606 \u1588 \u1575 \u1569  \u1575 \u1604 \u1582 \u1591 \u1577 </button>\
+        <button onclick="savePlan()" class="success">\uc0\u1581 \u1601 \u1592  \u1575 \u1604 \u1582 \u1591 \u1577 </button>\
+        <button onclick="resetForm()" class="secondary">\uc0\u1605 \u1587 \u1581  \u1575 \u1604 \u1606 \u1605 \u1608 \u1584 \u1580 </button>\
+      </div>\
+\
+      <div id="output"></div>\
+    </div>\
+\
+    <div id="saved-tab" class="tab-content">\
+      <h3>\uc0\u1575 \u1604 \u1582 \u1591 \u1591  \u1575 \u1604 \u1605 \u1581 \u1601 \u1608 \u1592 \u1577 </h3>\
+      <div id="savedPlans"></div>\
+    </div>\
+\
+    <div id="errorMessage" class="error-message" style="display: none;"></div>\
+  </div>\
+\
+  <script>\
+    // \uc0\u1602 \u1608 \u1575 \u1604 \u1576  \u1571 \u1607 \u1583 \u1575 \u1601  \u1575 \u1581 \u1578 \u1610 \u1575 \u1591 \u1610 \u1577 \
+    const fallbackObjectives = \{\
+      '\uc0\u1575 \u1604 \u1604 \u1594 \u1577  \u1575 \u1604 \u1593 \u1585 \u1576 \u1610 \u1577 ': [\
+        '\uc0\u1571 \u1606  \u1610 \u1601 \u1607 \u1605  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1602 \u1608 \u1575 \u1593 \u1583  \{title\} \u1608 \u1610 \u1591 \u1576 \u1602 \u1607 \u1575  \u1601 \u1610  \u1603 \u1578 \u1575 \u1576 \u1577  \u1606 \u1589 \u1608 \u1589 .',\
+        '\uc0\u1571 \u1606  \u1610 \u1581 \u1604 \u1604  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1606 \u1589 \u1608 \u1589 \u1611 \u1575  \u1578 \u1581 \u1578 \u1608 \u1610  \u1593 \u1604 \u1609  \{title\}.',\
+        '\uc0\u1571 \u1606  \u1610 \u1606 \u1575 \u1602 \u1588  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1571 \u1607 \u1605 \u1610 \u1577  \{title\} \u1601 \u1610  \u1575 \u1604 \u1578 \u1608 \u1575 \u1589 \u1604  \u1575 \u1604 \u1610 \u1608 \u1605 \u1610 .'\
+      ],\
+      '\uc0\u1575 \u1604 \u1585 \u1610 \u1575 \u1590 \u1610 \u1575 \u1578 ': [\
+        '\uc0\u1571 \u1606  \u1610 \u1601 \u1607 \u1605  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1605 \u1601 \u1607 \u1608 \u1605  \{title\} \u1605 \u1606  \u1582 \u1604 \u1575 \u1604  \u1571 \u1605 \u1579 \u1604 \u1577  \u1593 \u1605 \u1604 \u1610 \u1577 .',\
+        '\uc0\u1571 \u1606  \u1610 \u1581 \u1604  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1605 \u1587 \u1575 \u1574 \u1604  \u1578 \u1578 \u1593 \u1604 \u1602  \u1576 \u1600  \{title\} \u1576 \u1583 \u1602 \u1577 .',\
+        '\uc0\u1571 \u1606  \u1610 \u1591 \u1576 \u1602  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \{title\} \u1601 \u1610  \u1587 \u1610 \u1575 \u1602 \u1575 \u1578  \u1581 \u1610 \u1575 \u1578 \u1610 \u1577 .'\
+      ],\
+      '\uc0\u1575 \u1604 \u1593 \u1604 \u1608 \u1605 ': [\
+        '\uc0\u1571 \u1606  \u1610 \u1578 \u1593 \u1585 \u1601  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1593 \u1604 \u1609  \u1605 \u1603 \u1608 \u1606 \u1575 \u1578  \{title\}.',\
+        '\uc0\u1571 \u1606  \u1610 \u1588 \u1585 \u1581  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1608 \u1592 \u1610 \u1601 \u1577  \{title\} \u1576 \u1575 \u1587 \u1578 \u1582 \u1583 \u1575 \u1605  \u1571 \u1605 \u1579 \u1604 \u1577 .',\
+        '\uc0\u1571 \u1606  \u1610 \u1580 \u1585 \u1610  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1578 \u1580 \u1585 \u1576 \u1577  \u1576 \u1587 \u1610 \u1591 \u1577  \u1578 \u1578 \u1593 \u1604 \u1602  \u1576 \u1600  \{title\}.'\
+      ],\
+      '\uc0\u1575 \u1604 \u1583 \u1585 \u1575 \u1587 \u1575 \u1578  \u1575 \u1604 \u1575 \u1580 \u1578 \u1605 \u1575 \u1593 \u1610 \u1577 ': [\
+        '\uc0\u1571 \u1606  \u1610 \u1578 \u1593 \u1585 \u1601  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1593 \u1604 \u1609  \u1575 \u1604 \u1571 \u1581 \u1583 \u1575 \u1579  \u1575 \u1604 \u1585 \u1574 \u1610 \u1587 \u1610 \u1577  \u1604 \u1600  \{title\}.',\
+        '\uc0\u1571 \u1606  \u1610 \u1606 \u1575 \u1602 \u1588  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1571 \u1607 \u1605 \u1610 \u1577  \{title\} \u1601 \u1610  \u1575 \u1604 \u1607 \u1608 \u1610 \u1577  \u1575 \u1604 \u1608 \u1591 \u1606 \u1610 \u1577 .',\
+        '\uc0\u1571 \u1606  \u1610 \u1603 \u1578 \u1576  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1601 \u1602 \u1585 \u1577  \u1593 \u1606  \{title\}.'\
+      ],\
+      '\uc0\u1575 \u1604 \u1604 \u1594 \u1577  \u1575 \u1604 \u1573 \u1606 \u1580 \u1604 \u1610 \u1586 \u1610 \u1577 ': [\
+        '\uc0\u1571 \u1606  \u1610 \u1578 \u1593 \u1604 \u1605  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1575 \u1587 \u1578 \u1582 \u1583 \u1575 \u1605  \{title\} \u1601 \u1610  \u1580 \u1605 \u1604  \u1576 \u1587 \u1610 \u1591 \u1577 .',\
+        '\uc0\u1571 \u1606  \u1610 \u1605 \u1610 \u1586  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1576 \u1610 \u1606  \u1571 \u1606 \u1608 \u1575 \u1593  \{title\} \u1575 \u1604 \u1605 \u1582 \u1578 \u1604 \u1601 \u1577 .',\
+        '\uc0\u1571 \u1606  \u1610 \u1603 \u1578 \u1576  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1606 \u1589 \u1611 \u1575  \u1602 \u1589 \u1610 \u1585 \u1611 \u1575  \u1576 \u1575 \u1587 \u1578 \u1582 \u1583 \u1575 \u1605  \{title\}.'\
+      ],\
+      '\uc0\u1575 \u1604 \u1578 \u1585 \u1576 \u1610 \u1577  \u1575 \u1604 \u1573 \u1587 \u1604 \u1575 \u1605 \u1610 \u1577 ': [\
+        '\uc0\u1571 \u1606  \u1610 \u1601 \u1607 \u1605  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1571 \u1581 \u1603 \u1575 \u1605  \{title\}.',\
+        '\uc0\u1571 \u1606  \u1610 \u1606 \u1575 \u1602 \u1588  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1571 \u1607 \u1605 \u1610 \u1577  \{title\} \u1601 \u1610  \u1575 \u1604 \u1581 \u1610 \u1575 \u1577  \u1575 \u1604 \u1610 \u1608 \u1605 \u1610 \u1577 .',\
+        '\uc0\u1571 \u1606  \u1610 \u1591 \u1576 \u1602  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1602 \u1608 \u1575 \u1593 \u1583  \{title\} \u1601 \u1610  \u1587 \u1604 \u1608 \u1603 \u1607 .'\
+      ]\
+    \};\
+\
+    // \uc0\u1602 \u1608 \u1575 \u1604 \u1576  \u1578 \u1593 \u1576 \u1574 \u1577  \u1578 \u1604 \u1602 \u1575 \u1574 \u1610 \u1577 \
+    const suggestionTemplates = \{\
+      '\uc0\u1575 \u1604 \u1604 \u1594 \u1577  \u1575 \u1604 \u1593 \u1585 \u1576 \u1610 \u1577 ': \{\
+        academicYear: '1446/1447',\
+        date: new Date().toISOString().split('T')[0],\
+        subject: '\uc0\u1575 \u1604 \u1604 \u1594 \u1577  \u1575 \u1604 \u1593 \u1585 \u1576 \u1610 \u1577 ',\
+        grade: '\uc0\u1575 \u1604 \u1589 \u1601  \u1575 \u1604 \u1582 \u1575 \u1605 \u1587 ',\
+        lessonTitle: '\uc0\u1575 \u1604 \u1580 \u1605 \u1604 \u1577  \u1575 \u1604 \u1575 \u1587 \u1605 \u1610 \u1577 ',\
+        objectives: '1. \uc0\u1571 \u1606  \u1610 \u1601 \u1607 \u1605  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1605 \u1603 \u1608 \u1606 \u1575 \u1578  \u1575 \u1604 \u1580 \u1605 \u1604 \u1577  \u1575 \u1604 \u1575 \u1587 \u1605 \u1610 \u1577 .\\n2. \u1571 \u1606  \u1610 \u1603 \u1578 \u1576  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1580 \u1605 \u1604 \u1611 \u1575  \u1575 \u1587 \u1605 \u1610 \u1577  \u1589 \u1581 \u1610 \u1581 \u1577 .\\n3. \u1571 \u1606  \u1610 \u1605 \u1610 \u1586  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1576 \u1610 \u1606  \u1575 \u1604 \u1580 \u1605 \u1604 \u1577  \u1575 \u1604 \u1575 \u1587 \u1605 \u1610 \u1577  \u1608 \u1575 \u1604 \u1601 \u1593 \u1604 \u1610 \u1577 .',\
+        activities: '\uc0\u1588 \u1585 \u1581  \u1602 \u1608 \u1575 \u1593 \u1583  \u1575 \u1604 \u1580 \u1605 \u1604 \u1577  \u1575 \u1604 \u1575 \u1587 \u1605 \u1610 \u1577 \u1548  \u1581 \u1604  \u1578 \u1605 \u1575 \u1585 \u1610 \u1606 \u1548  \u1603 \u1578 \u1575 \u1576 \u1577  \u1601 \u1602 \u1585 \u1577 .',\
+        resources: '\uc0\u1603 \u1578 \u1575 \u1576  \u1575 \u1604 \u1604 \u1594 \u1577  \u1575 \u1604 \u1593 \u1585 \u1576 \u1610 \u1577 \u1548  \u1604 \u1608 \u1581  \u1584 \u1603 \u1610 .',\
+        assessment: '\uc0\u1575 \u1582 \u1578 \u1576 \u1575 \u1585  \u1602 \u1589 \u1610 \u1585 \u1548  \u1605 \u1585 \u1575 \u1580 \u1593 \u1577  \u1588 \u1601 \u1607 \u1610 \u1577 .',\
+        homework: '\uc0\u1603 \u1578 \u1575 \u1576 \u1577  \u1582 \u1605 \u1587  \u1580 \u1605 \u1604  \u1575 \u1587 \u1605 \u1610 \u1577 .'\
+      \},\
+      '\uc0\u1575 \u1604 \u1585 \u1610 \u1575 \u1590 \u1610 \u1575 \u1578 ': \{\
+        academicYear: '1446/1447',\
+        date: new Date().toISOString().split('T')[0],\
+        subject: '\uc0\u1575 \u1604 \u1585 \u1610 \u1575 \u1590 \u1610 \u1575 \u1578 ',\
+        grade: '\uc0\u1575 \u1604 \u1589 \u1601  \u1575 \u1604 \u1582 \u1575 \u1605 \u1587 ',\
+        lessonTitle: '\uc0\u1575 \u1604 \u1603 \u1587 \u1608 \u1585 ',\
+        objectives: '1. \uc0\u1571 \u1606  \u1610 \u1601 \u1607 \u1605  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1605 \u1601 \u1607 \u1608 \u1605  \u1575 \u1604 \u1603 \u1587 \u1608 \u1585 .\\n2. \u1571 \u1606  \u1610 \u1581 \u1604  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1605 \u1587 \u1575 \u1574 \u1604  \u1580 \u1605 \u1593  \u1608 \u1591 \u1585 \u1581  \u1575 \u1604 \u1603 \u1587 \u1608 \u1585 .\\n3. \u1571 \u1606  \u1610 \u1591 \u1576 \u1602  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1575 \u1604 \u1603 \u1587 \u1608 \u1585  \u1601 \u1610  \u1605 \u1587 \u1575 \u1574 \u1604  \u1581 \u1610 \u1575 \u1578 \u1610 \u1577 .',\
+        activities: '\uc0\u1588 \u1585 \u1581  \u1575 \u1604 \u1603 \u1587 \u1608 \u1585 \u1548  \u1581 \u1604  \u1578 \u1605 \u1575 \u1585 \u1610 \u1606  \u1580 \u1605 \u1575 \u1593 \u1610 \u1577 .',\
+        resources: '\uc0\u1603 \u1578 \u1575 \u1576  \u1575 \u1604 \u1585 \u1610 \u1575 \u1590 \u1610 \u1575 \u1578 \u1548  \u1571 \u1608 \u1585 \u1575 \u1602  \u1593 \u1605 \u1604 .',\
+        assessment: '\uc0\u1581 \u1604  \u1605 \u1587 \u1575 \u1574 \u1604 \u1548  \u1575 \u1582 \u1578 \u1576 \u1575 \u1585  \u1602 \u1589 \u1610 \u1585 .',\
+        homework: '\uc0\u1581 \u1604  \u1582 \u1605 \u1587  \u1605 \u1587 \u1575 \u1574 \u1604  \u1593 \u1606  \u1575 \u1604 \u1603 \u1587 \u1608 \u1585 .'\
+      \},\
+      '\uc0\u1575 \u1604 \u1593 \u1604 \u1608 \u1605 ': \{\
+        academicYear: '1446/1447',\
+        date: new Date().toISOString().split('T')[0],\
+        subject: '\uc0\u1575 \u1604 \u1593 \u1604 \u1608 \u1605 ',\
+        grade: '\uc0\u1575 \u1604 \u1589 \u1601  \u1575 \u1604 \u1582 \u1575 \u1605 \u1587 ',\
+        lessonTitle: '\uc0\u1583 \u1608 \u1585 \u1577  \u1575 \u1604 \u1605 \u1575 \u1569 ',\
+        objectives: '1. \uc0\u1571 \u1606  \u1610 \u1578 \u1593 \u1585 \u1601  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1593 \u1604 \u1609  \u1605 \u1585 \u1575 \u1581 \u1604  \u1583 \u1608 \u1585 \u1577  \u1575 \u1604 \u1605 \u1575 \u1569 .\\n2. \u1571 \u1606  \u1610 \u1588 \u1585 \u1581  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1571 \u1607 \u1605 \u1610 \u1577  \u1583 \u1608 \u1585 \u1577  \u1575 \u1604 \u1605 \u1575 \u1569 .\\n3. \u1571 \u1606  \u1610 \u1585 \u1576 \u1591  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1583 \u1608 \u1585 \u1577  \u1575 \u1604 \u1605 \u1575 \u1569  \u1576 \u1575 \u1604 \u1576 \u1610 \u1574 \u1577 .',\
+        activities: '\uc0\u1588 \u1585 \u1581  \u1583 \u1608 \u1585 \u1577  \u1575 \u1604 \u1605 \u1575 \u1569 \u1548  \u1585 \u1587 \u1605  \u1576 \u1610 \u1575 \u1606 \u1610 .',\
+        resources: '\uc0\u1603 \u1578 \u1575 \u1576  \u1575 \u1604 \u1593 \u1604 \u1608 \u1605 \u1548  \u1601 \u1610 \u1583 \u1610 \u1608  \u1578 \u1593 \u1604 \u1610 \u1605 \u1610 .',\
+        assessment: '\uc0\u1575 \u1582 \u1578 \u1576 \u1575 \u1585  \u1602 \u1589 \u1610 \u1585 \u1548  \u1605 \u1606 \u1575 \u1602 \u1588 \u1577  \u1580 \u1605 \u1575 \u1593 \u1610 \u1577 .',\
+        homework: '\uc0\u1585 \u1587 \u1605  \u1583 \u1608 \u1585 \u1577  \u1575 \u1604 \u1605 \u1575 \u1569 .'\
+      \},\
+      '\uc0\u1575 \u1604 \u1583 \u1585 \u1575 \u1587 \u1575 \u1578  \u1575 \u1604 \u1575 \u1580 \u1578 \u1605 \u1575 \u1593 \u1610 \u1577 ': \{\
+        academicYear: '1446/1447',\
+        date: new Date().toISOString().split('T')[0],\
+        subject: '\uc0\u1575 \u1604 \u1583 \u1585 \u1575 \u1587 \u1575 \u1578  \u1575 \u1604 \u1575 \u1580 \u1578 \u1605 \u1575 \u1593 \u1610 \u1577 ',\
+        grade: '\uc0\u1575 \u1604 \u1589 \u1601  \u1575 \u1604 \u1582 \u1575 \u1605 \u1587 ',\
+        lessonTitle: '\uc0\u1578 \u1575 \u1585 \u1610 \u1582  \u1602 \u1591 \u1585 ',\
+        objectives: '1. \uc0\u1571 \u1606  \u1610 \u1578 \u1593 \u1585 \u1601  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1593 \u1604 \u1609  \u1575 \u1604 \u1571 \u1581 \u1583 \u1575 \u1579  \u1575 \u1604 \u1585 \u1574 \u1610 \u1587 \u1610 \u1577  \u1601 \u1610  \u1578 \u1575 \u1585 \u1610 \u1582  \u1602 \u1591 \u1585 .\\n2. \u1571 \u1606  \u1610 \u1606 \u1575 \u1602 \u1588  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1571 \u1607 \u1605 \u1610 \u1577  \u1578 \u1575 \u1585 \u1610 \u1582  \u1602 \u1591 \u1585 .\\n3. \u1571 \u1606  \u1610 \u1603 \u1578 \u1576  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1601 \u1602 \u1585 \u1577  \u1593 \u1606  \u1578 \u1575 \u1585 \u1610 \u1582  \u1602 \u1591 \u1585 .',\
+        activities: '\uc0\u1588 \u1585 \u1581  \u1578 \u1575 \u1585 \u1610 \u1582 \u1610 \u1548  \u1605 \u1606 \u1575 \u1602 \u1588 \u1577  \u1580 \u1605 \u1575 \u1593 \u1610 \u1577 .',\
+        resources: '\uc0\u1603 \u1578 \u1575 \u1576  \u1575 \u1604 \u1583 \u1585 \u1575 \u1587 \u1575 \u1578 \u1548  \u1589 \u1608 \u1585  \u1578 \u1575 \u1585 \u1610 \u1582 \u1610 \u1577 .',\
+        assessment: '\uc0\u1603 \u1578 \u1575 \u1576 \u1577  \u1601 \u1602 \u1585 \u1577 \u1548  \u1575 \u1582 \u1578 \u1576 \u1575 \u1585  \u1602 \u1589 \u1610 \u1585 .',\
+        homework: '\uc0\u1603 \u1578 \u1575 \u1576 \u1577  \u1601 \u1602 \u1585 \u1577  \u1593 \u1606  \u1581 \u1583 \u1579  \u1578 \u1575 \u1585 \u1610 \u1582 \u1610 .'\
+      \},\
+      '\uc0\u1575 \u1604 \u1604 \u1594 \u1577  \u1575 \u1604 \u1573 \u1606 \u1580 \u1604 \u1610 \u1586 \u1610 \u1577 ': \{\
+        academicYear: '1446/1447',\
+        date: new Date().toISOString().split('T')[0],\
+        subject: '\uc0\u1575 \u1604 \u1604 \u1594 \u1577  \u1575 \u1604 \u1573 \u1606 \u1580 \u1604 \u1610 \u1586 \u1610 \u1577 ',\
+        grade: '\uc0\u1575 \u1604 \u1589 \u1601  \u1575 \u1604 \u1582 \u1575 \u1605 \u1587 ',\
+        lessonTitle: 'Present Simple',\
+        objectives: '1. \uc0\u1571 \u1606  \u1610 \u1578 \u1593 \u1604 \u1605  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1575 \u1587 \u1578 \u1582 \u1583 \u1575 \u1605  \u1586 \u1605 \u1606  \u1575 \u1604 \u1605 \u1590 \u1575 \u1585 \u1593  \u1575 \u1604 \u1576 \u1587 \u1610 \u1591 .\\n2. \u1571 \u1606  \u1610 \u1603 \u1578 \u1576  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1580 \u1605 \u1604 \u1611 \u1575  \u1576 \u1575 \u1587 \u1578 \u1582 \u1583 \u1575 \u1605  \u1575 \u1604 \u1605 \u1590 \u1575 \u1585 \u1593  \u1575 \u1604 \u1576 \u1587 \u1610 \u1591 .\\n3. \u1571 \u1606  \u1610 \u1606 \u1575 \u1602 \u1588  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1575 \u1587 \u1578 \u1582 \u1583 \u1575 \u1605 \u1575 \u1578  \u1575 \u1604 \u1605 \u1590 \u1575 \u1585 \u1593  \u1575 \u1604 \u1576 \u1587 \u1610 \u1591 .',\
+        activities: '\uc0\u1588 \u1585 \u1581  \u1602 \u1608 \u1575 \u1593 \u1583 \u1548  \u1603 \u1578 \u1575 \u1576 \u1577  \u1580 \u1605 \u1604 .',\
+        resources: '\uc0\u1603 \u1578 \u1575 \u1576  \u1575 \u1604 \u1573 \u1606 \u1580 \u1604 \u1610 \u1586 \u1610 \u1577 \u1548  \u1604 \u1608 \u1581  \u1584 \u1603 \u1610 .',\
+        assessment: '\uc0\u1575 \u1582 \u1578 \u1576 \u1575 \u1585  \u1602 \u1589 \u1610 \u1585 \u1548  \u1605 \u1606 \u1575 \u1602 \u1588 \u1577  \u1588 \u1601 \u1607 \u1610 \u1577 .',\
+        homework: '\uc0\u1603 \u1578 \u1575 \u1576 \u1577  \u1582 \u1605 \u1587  \u1580 \u1605 \u1604  \u1576 \u1575 \u1604 \u1605 \u1590 \u1575 \u1585 \u1593  \u1575 \u1604 \u1576 \u1587 \u1610 \u1591 .'\
+      \},\
+      '\uc0\u1575 \u1604 \u1578 \u1585 \u1576 \u1610 \u1577  \u1575 \u1604 \u1573 \u1587 \u1604 \u1575 \u1605 \u1610 \u1577 ': \{\
+        academicYear: '1446/1447',\
+        date: new Date().toISOString().split('T')[0],\
+        subject: '\uc0\u1575 \u1604 \u1578 \u1585 \u1576 \u1610 \u1577  \u1575 \u1604 \u1573 \u1587 \u1604 \u1575 \u1605 \u1610 \u1577 ',\
+        grade: '\uc0\u1575 \u1604 \u1589 \u1601  \u1575 \u1604 \u1582 \u1575 \u1605 \u1587 ',\
+        lessonTitle: '\uc0\u1575 \u1604 \u1589 \u1604 \u1575 \u1577 ',\
+        objectives: '1. \uc0\u1571 \u1606  \u1610 \u1601 \u1607 \u1605  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1571 \u1581 \u1603 \u1575 \u1605  \u1575 \u1604 \u1589 \u1604 \u1575 \u1577 .\\n2. \u1571 \u1606  \u1610 \u1606 \u1575 \u1602 \u1588  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1571 \u1607 \u1605 \u1610 \u1577  \u1575 \u1604 \u1589 \u1604 \u1575 \u1577 .\\n3. \u1571 \u1606  \u1610 \u1591 \u1576 \u1602  \u1575 \u1604 \u1591 \u1575 \u1604 \u1576  \u1571 \u1581 \u1603 \u1575 \u1605  \u1575 \u1604 \u1589 \u1604 \u1575 \u1577 .',\
+        activities: '\uc0\u1588 \u1585 \u1581  \u1571 \u1581 \u1603 \u1575 \u1605 \u1548  \u1605 \u1606 \u1575 \u1602 \u1588 \u1577  \u1580 \u1605 \u1575 \u1593 \u1610 \u1577 .',\
+        resources: '\uc0\u1603 \u1578 \u1575 \u1576  \u1575 \u1604 \u1578 \u1585 \u1576 \u1610 \u1577  \u1575 \u1604 \u1573 \u1587 \u1604 \u1575 \u1605 \u1610 \u1577 \u1548  \u1604 \u1608 \u1581  \u1584 \u1603 \u1610 .',\
+        assessment: '\uc0\u1575 \u1582 \u1578 \u1576 \u1575 \u1585  \u1602 \u1589 \u1610 \u1585 \u1548  \u1605 \u1606 \u1575 \u1602 \u1588 \u1577 .',\
+        homework: '\uc0\u1603 \u1578 \u1575 \u1576 \u1577  \u1601 \u1602 \u1585 \u1577  \u1593 \u1606  \u1571 \u1607 \u1605 \u1610 \u1577  \u1575 \u1604 \u1589 \u1604 \u1575 \u1577 .'\
+      \}\
+    \};\
+\
+    // \uc0\u1583 \u1575 \u1604 \u1577  \u1578 \u1608 \u1604 \u1610 \u1583  \u1575 \u1604 \u1571 \u1607 \u1583 \u1575 \u1601  \u1575 \u1604 \u1605 \u1581 \u1604 \u1610 \u1577 \
+    function generateLocalObjectives() \{\
+      try \{\
+        console.log('\uc0\u1576 \u1583 \u1569  \u1578 \u1608 \u1604 \u1610 \u1583  \u1575 \u1604 \u1571 \u1607 \u1583 \u1575 \u1601  \u1575 \u1604 \u1605 \u1581 \u1604 \u1610 \u1577 ...');\
+        const lessonTitle = document.getElementById('lessonTitle')?.value.trim();\
+        const subject = document.getElementById('subject')?.value;\
+        \
+        if (!lessonTitle || !subject) \{\
+          showError('\uc0\u1610 \u1585 \u1580 \u1609  \u1573 \u1583 \u1582 \u1575 \u1604  \u1593 \u1606 \u1608 \u1575 \u1606  \u1575 \u1604 \u1583 \u1585 \u1587  \u1608 \u1575 \u1604 \u1605 \u1575 \u1583 \u1577 !');\
+          console.error('\uc0\u1582 \u1591 \u1571 : \u1593 \u1606 \u1608 \u1575 \u1606  \u1575 \u1604 \u1583 \u1585 \u1587  \u1571 \u1608  \u1575 \u1604 \u1605 \u1575 \u1583 \u1577  \u1601 \u1575 \u1585 \u1594 ');\
+          return;\
+        \}\
+\
+        if (!fallbackObjectives[subject]) \{\
+          showError('\uc0\u1575 \u1604 \u1605 \u1575 \u1583 \u1577  \u1575 \u1604 \u1605 \u1582 \u1578 \u1575 \u1585 \u1577  \u1594 \u1610 \u1585  \u1605 \u1583 \u1593 \u1608 \u1605 \u1577 . \u1610 \u1585 \u1580 \u1609  \u1575 \u1582 \u1578 \u1610 \u1575 \u1585  \u1605 \u1575 \u1583 \u1577  \u1571 \u1582 \u1585 \u1609 .');\
+          console.error('\uc0\u1582 \u1591 \u1571 : \u1575 \u1604 \u1605 \u1575 \u1583 \u1577  \u1594 \u1610 \u1585  \u1605 \u1583 \u1593 \u1608 \u1605 \u1577 :', subject);\
+          return;\
+        \}\
+\
+        const objectives = fallbackObjectives[subject];\
+        const generatedObjectives = objectives.slice(0, 3).map((obj, i) => `$\{i+1\}. $\{obj.replace('\{title\}', lessonTitle)\}`).join('\\n');\
+        document.getElementById('objectives').value = generatedObjectives;\
+        console.log(`\uc0\u1578 \u1605  \u1578 \u1608 \u1604 \u1610 \u1583  \u1571 \u1607 \u1583 \u1575 \u1601  \u1604 \u1604 \u1605 \u1575 \u1583 \u1577 : $\{subject\}, \u1575 \u1604 \u1593 \u1606 \u1608 \u1575 \u1606 : $\{lessonTitle\}`);\
+        clearError();\
+      \} catch (error) \{\
+        console.error('\uc0\u1582 \u1591 \u1571  \u1601 \u1610  \u1578 \u1608 \u1604 \u1610 \u1583  \u1575 \u1604 \u1571 \u1607 \u1583 \u1575 \u1601  \u1575 \u1604 \u1605 \u1581 \u1604 \u1610 \u1577 :', error);\
+        showError('\uc0\u1582 \u1591 \u1571  \u1601 \u1610  \u1578 \u1608 \u1604 \u1610 \u1583  \u1575 \u1604 \u1571 \u1607 \u1583 \u1575 \u1601 . \u1578 \u1581 \u1602 \u1602  \u1605 \u1606  \u1608 \u1581 \u1583 \u1577  \u1575 \u1604 \u1578 \u1581 \u1603 \u1605 .');\
+      \}\
+    \}\
+\
+    // \uc0\u1583 \u1575 \u1604 \u1577  \u1578 \u1593 \u1576 \u1574 \u1577  \u1578 \u1604 \u1602 \u1575 \u1574 \u1610 \u1577 \
+    function autoFillFields() \{\
+      try \{\
+        console.log('\uc0\u1576 \u1583 \u1569  \u1575 \u1604 \u1578 \u1593 \u1576 \u1574 \u1577  \u1575 \u1604 \u1578 \u1604 \u1602 \u1575 \u1574 \u1610 \u1577 ...');\
+        const subject = document.getElementById('subject')?.value;\
+        const prompt = document.getElementById('aiPrompt')?.value.trim();\
+\
+        if (!subject) \{\
+          showError('\uc0\u1610 \u1585 \u1580 \u1609  \u1575 \u1582 \u1578 \u1610 \u1575 \u1585  \u1575 \u1604 \u1605 \u1575 \u1583 \u1577  \u1571 \u1608 \u1604 \u1575 \u1611 !');\
+          console.error('\uc0\u1582 \u1591 \u1571 : \u1575 \u1604 \u1605 \u1575 \u1583 \u1577  \u1594 \u1610 \u1585  \u1605 \u1581 \u1583 \u1583 \u1577 ');\
+          return;\
+        \}\
+\
+        if (!suggestionTemplates[subject]) \{\
+          showError('\uc0\u1575 \u1604 \u1605 \u1575 \u1583 \u1577  \u1575 \u1604 \u1605 \u1582 \u1578 \u1575 \u1585 \u1577  \u1594 \u1610 \u1585  \u1605 \u1583 \u1593 \u1608 \u1605 \u1577  \u1604 \u1604 \u1578 \u1593 \u1576 \u1574 \u1577  \u1575 \u1604 \u1578 \u1604 \u1602 \u1575 \u1574 \u1610 \u1577 .');\
+          console.error('\uc0\u1582 \u1591 \u1571 : \u1575 \u1604 \u1605 \u1575 \u1583 \u1577  \u1594 \u1610 \u1585  \u1605 \u1583 \u1593 \u1608 \u1605 \u1577  \u1604 \u1604 \u1578 \u1593 \u1576 \u1574 \u1577 :', subject);\
+          return;\
+        \}\
+\
+        const selectedTemplate = suggestionTemplates[subject];\
+\
+        const fields = ['academicYear', 'date', 'subject', 'grade', 'lessonTitle', 'objectives', 'activities', 'resources', 'assessment', 'homework'];\
+        fields.forEach(field => \{\
+          const element = document.getElementById(field);\
+          if (element) element.value = selectedTemplate[field] || '';\
+        \});\
+\
+        if (prompt) \{\
+          document.getElementById('lessonTitle').value = prompt;\
+        \}\
+\
+        console.log(`\uc0\u1578 \u1605  \u1578 \u1593 \u1576 \u1574 \u1577  \u1575 \u1604 \u1581 \u1602 \u1608 \u1604  \u1604 \u1604 \u1605 \u1575 \u1583 \u1577 : $\{subject\}`);\
+        clearError();\
+      \} catch (error) \{\
+        console.error('\uc0\u1582 \u1591 \u1571  \u1601 \u1610  \u1575 \u1604 \u1578 \u1593 \u1576 \u1574 \u1577  \u1575 \u1604 \u1578 \u1604 \u1602 \u1575 \u1574 \u1610 \u1577 :', error);\
+        showError('\uc0\u1582 \u1591 \u1571  \u1601 \u1610  \u1575 \u1604 \u1578 \u1593 \u1576 \u1574 \u1577  \u1575 \u1604 \u1578 \u1604 \u1602 \u1575 \u1574 \u1610 \u1577 .');\
+      \}\
+    \}\
+\
+    // \uc0\u1583 \u1575 \u1604 \u1577  \u1601 \u1578 \u1581  \u1575 \u1604 \u1578 \u1576 \u1608 \u1610 \u1576 \u1575 \u1578 \
+    function openTab(tabId) \{\
+      try \{\
+        console.log(`\uc0\u1601 \u1578 \u1581  \u1575 \u1604 \u1578 \u1576 \u1608 \u1610 \u1576 : $\{tabId\}`);\
+        document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));\
+        document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));\
+        document.getElementById(tabId).classList.add('active');\
+        document.querySelector(`.tab[onclick="openTab('$\{tabId\}')"]`).classList.add('active');\
+        \
+        if (tabId === 'saved-tab') displaySavedPlans();\
+      \} catch (error) \{\
+        console.error('\uc0\u1582 \u1591 \u1571  \u1601 \u1610  \u1601 \u1578 \u1581  \u1575 \u1604 \u1578 \u1576 \u1608 \u1610 \u1576 :', error);\
+        showError('\uc0\u1582 \u1591 \u1571  \u1601 \u1610  \u1601 \u1578 \u1581  \u1575 \u1604 \u1578 \u1576 \u1608 \u1610 \u1576 .');\
+      \}\
+    \}\
+\
+    // \uc0\u1573 \u1606 \u1588 \u1575 \u1569  \u1575 \u1604 \u1582 \u1591 \u1577 \
+    function generatePlan() \{\
+      try \{\
+        console.log('\uc0\u1576 \u1583 \u1569  \u1573 \u1606 \u1588 \u1575 \u1569  \u1575 \u1604 \u1582 \u1591 \u1577 ...');\
+        const fields = ['academicYear', 'date', 'subject', 'grade', 'lessonTitle', 'objectives', 'activities', 'resources', 'assessment', 'homework'];\
+        const plan = \{\};\
+        fields.forEach(field => \{\
+          plan[field] = document.getElementById(field)?.value || '';\
+        \});\
+\
+        if (fields.some(field => !plan[field])) \{\
+          showError('\uc0\u1610 \u1585 \u1580 \u1609  \u1605 \u1604 \u1569  \u1580 \u1605 \u1610 \u1593  \u1575 \u1604 \u1581 \u1602 \u1608 \u1604 !');\
+          console.error('\uc0\u1582 \u1591 \u1571 : \u1581 \u1602 \u1608 \u1604  \u1605 \u1601 \u1602 \u1608 \u1583 \u1577 ');\
+          return;\
+        \}\
+\
+        const objectiveCount = plan.objectives.split('\\n').filter(line => line.trim().match(/^\\d+\\./)).length;\
+        if (objectiveCount < 3) \{\
+          showError('\uc0\u1610 \u1580 \u1576  \u1571 \u1606  \u1578 \u1581 \u1578 \u1608 \u1610  \u1575 \u1604 \u1571 \u1607 \u1583 \u1575 \u1601  \u1593 \u1604 \u1609  3 \u1571 \u1607 \u1583 \u1575 \u1601  \u1593 \u1604 \u1609  \u1575 \u1604 \u1571 \u1602 \u1604 !');\
+          console.error('\uc0\u1582 \u1591 \u1571 : \u1593 \u1583 \u1583  \u1575 \u1604 \u1571 \u1607 \u1583 \u1575 \u1601  \u1571 \u1602 \u1604  \u1605 \u1606  3');\
+          return;\
+        \}\
+\
+        const output = `\
+          <h3>\uc0\u1582 \u1591 \u1577  \u1575 \u1604 \u1578 \u1581 \u1590 \u1610 \u1585  \u1575 \u1604 \u1610 \u1608 \u1605 \u1610 \u1577 </h3>\
+          <p><strong>\uc0\u1575 \u1604 \u1593 \u1575 \u1605  \u1575 \u1604 \u1571 \u1603 \u1575 \u1583 \u1610 \u1605 \u1610 :</strong> $\{plan.academicYear\}</p>\
+          <p><strong>\uc0\u1575 \u1604 \u1578 \u1575 \u1585 \u1610 \u1582 :</strong> $\{plan.date\}</p>\
+          <p><strong>\uc0\u1575 \u1604 \u1605 \u1575 \u1583 \u1577 :</strong> $\{plan.subject\}</p>\
+          <p><strong>\uc0\u1575 \u1604 \u1589 \u1601 :</strong> $\{plan.grade\}</p>\
+          <p><strong>\uc0\u1593 \u1606 \u1608 \u1575 \u1606  \u1575 \u1604 \u1583 \u1585 \u1587 :</strong> $\{plan.lessonTitle\}</p>\
+          <p><strong>\uc0\u1575 \u1604 \u1571 \u1607 \u1583 \u1575 \u1601 :</strong></p>\
+          <ol>$\{plan.objectives.split('\\n').map(obj => `<li>$\{obj\}</li>`).join('')\}</ol>\
+          <p><strong>\uc0\u1575 \u1604 \u1571 \u1606 \u1588 \u1591 \u1577 :</strong> $\{plan.activities\}</p>\
+          <p><strong>\uc0\u1575 \u1604 \u1605 \u1608 \u1575 \u1585 \u1583 :</strong> $\{plan.resources\}</p>\
+          <p><strong>\uc0\u1575 \u1604 \u1578 \u1602 \u1610 \u1610 \u1605 :</strong> $\{plan.assessment\}</p>\
+          <p><strong>\uc0\u1575 \u1604 \u1608 \u1575 \u1580 \u1576 \u1575 \u1578 :</strong> $\{plan.homework\}</p>\
+        `;\
+\
+        document.getElementById('output').innerHTML = output;\
+        document.getElementById('output').style.display = 'block';\
+        console.log('\uc0\u1578 \u1605  \u1573 \u1606 \u1588 \u1575 \u1569  \u1575 \u1604 \u1582 \u1591 \u1577  \u1576 \u1606 \u1580 \u1575 \u1581 ');\
+        clearError();\
+      \} catch (error) \{\
+        console.error('\uc0\u1582 \u1591 \u1571  \u1601 \u1610  \u1573 \u1606 \u1588 \u1575 \u1569  \u1575 \u1604 \u1582 \u1591 \u1577 :', error);\
+        showError('\uc0\u1582 \u1591 \u1571  \u1601 \u1610  \u1573 \u1606 \u1588 \u1575 \u1569  \u1575 \u1604 \u1582 \u1591 \u1577 .');\
+      \}\
+    \}\
+\
+    // \uc0\u1581 \u1601 \u1592  \u1575 \u1604 \u1582 \u1591 \u1577 \
+    function savePlan() \{\
+      try \{\
+        console.log('\uc0\u1576 \u1583 \u1569  \u1581 \u1601 \u1592  \u1575 \u1604 \u1582 \u1591 \u1577 ...');\
+        const plan = \{\
+          id: Date.now(),\
+          createdAt: new Date().toISOString(),\
+          academicYear: document.getElementById('academicYear')?.value,\
+          date: document.getElementById('date')?.value,\
+          subject: document.getElementById('subject')?.value,\
+          grade: document.getElementById('grade')?.value,\
+          lessonTitle: document.getElementById('lessonTitle')?.value,\
+          objectives: document.getElementById('objectives')?.value\
+        \};\
+\
+        let savedPlans = [];\
+        try \{\
+          savedPlans = JSON.parse(localStorage.getItem('savedPlans') || '[]');\
+        \} catch (e) \{\
+          console.warn('\uc0\u1601 \u1588 \u1604  \u1578 \u1581 \u1605 \u1610 \u1604  savedPlans \u1605 \u1606  localStorage:', e);\
+        \}\
+        savedPlans.push(plan);\
+        try \{\
+          localStorage.setItem('savedPlans', JSON.stringify(savedPlans));\
+        \} catch (e) \{\
+          console.warn('\uc0\u1601 \u1588 \u1604  \u1581 \u1601 \u1592  savedPlans \u1573 \u1604 \u1609  localStorage:', e);\
+          showError('\uc0\u1601 \u1588 \u1604  \u1581 \u1601 \u1592  \u1575 \u1604 \u1582 \u1591 \u1577 . \u1578 \u1581 \u1602 \u1602  \u1605 \u1606  \u1583 \u1593 \u1605  localStorage.');\
+          return;\
+        \}\
+        alert('\uc0\u1578 \u1605  \u1581 \u1601 \u1592  \u1575 \u1604 \u1582 \u1591 \u1577  \u1576 \u1606 \u1580 \u1575 \u1581 !');\
+        displaySavedPlans();\
+        console.log('\uc0\u1578 \u1605  \u1581 \u1601 \u1592  \u1575 \u1604 \u1582 \u1591 \u1577  \u1576 \u1606 \u1580 \u1575 \u1581 ');\
+      \} catch (error) \{\
+        console.error('\uc0\u1582 \u1591 \u1571  \u1601 \u1610  \u1581 \u1601 \u1592  \u1575 \u1604 \u1582 \u1591 \u1577 :', error);\
+        showError('\uc0\u1582 \u1591 \u1571  \u1601 \u1610  \u1581 \u1601 \u1592  \u1575 \u1604 \u1582 \u1591 \u1577 .');\
+      \}\
+    \}\
+\
+    // \uc0\u1593 \u1585 \u1590  \u1575 \u1604 \u1582 \u1591 \u1591  \u1575 \u1604 \u1605 \u1581 \u1601 \u1608 \u1592 \u1577 \
+    function displaySavedPlans() \{\
+      try \{\
+        console.log('\uc0\u1593 \u1585 \u1590  \u1575 \u1604 \u1582 \u1591 \u1591  \u1575 \u1604 \u1605 \u1581 \u1601 \u1608 \u1592 \u1577 ...');\
+        const savedPlansDiv = document.getElementById('savedPlans');\
+        let savedPlans = [];\
+        try \{\
+          savedPlans = JSON.parse(localStorage.getItem('savedPlans') || '[]');\
+        \} catch (e) \{\
+          console.warn('\uc0\u1601 \u1588 \u1604  \u1578 \u1581 \u1605 \u1610 \u1604  savedPlans \u1605 \u1606  localStorage:', e);\
+        \}\
+        savedPlansDiv.innerHTML = '';\
+\
+        savedPlans.forEach(plan => \{\
+          savedPlansDiv.innerHTML += `\
+            <div class="plan-card">\
+              <h4>$\{plan.lessonTitle\}</h4>\
+              <p><strong>\uc0\u1575 \u1604 \u1605 \u1575 \u1583 \u1577 :</strong> $\{plan.subject\}</p>\
+              <p><strong>\uc0\u1575 \u1604 \u1589 \u1601 :</strong> $\{plan.grade\}</p>\
+              <p><strong>\uc0\u1578 \u1575 \u1585 \u1610 \u1582  \u1575 \u1604 \u1581 \u1601 \u1592 :</strong> $\{new Date(plan.createdAt).toLocaleDateString('ar-QA')\}</p>\
+              <button onclick="loadPlan('$\{plan.id\}')" class="success">\uc0\u1593 \u1585 \u1590 </button>\
+            </div>\
+          `;\
+        \});\
+        console.log('\uc0\u1578 \u1605  \u1593 \u1585 \u1590  \u1575 \u1604 \u1582 \u1591 \u1591  \u1575 \u1604 \u1605 \u1581 \u1601 \u1608 \u1592 \u1577 ');\
+      \} catch (error) \{\
+        console.error('\uc0\u1582 \u1591 \u1571  \u1601 \u1610  \u1593 \u1585 \u1590  \u1575 \u1604 \u1582 \u1591 \u1591 :', error);\
+        showError('\uc0\u1582 \u1591 \u1571  \u1601 \u1610  \u1593 \u1585 \u1590  \u1575 \u1604 \u1582 \u1591 \u1591 .');\
+      \}\
+    \}\
+\
+    // \uc0\u1578 \u1581 \u1605 \u1610 \u1604  \u1582 \u1591 \u1577 \
+    function loadPlan(id) \{\
+      try \{\
+        console.log(`\uc0\u1578 \u1581 \u1605 \u1610 \u1604  \u1575 \u1604 \u1582 \u1591 \u1577 : $\{id\}`);\
+        let savedPlans = [];\
+        try \{\
+          savedPlans = JSON.parse(localStorage.getItem('savedPlans') || '[]');\
+        \} catch (e) \{\
+          console.warn('\uc0\u1601 \u1588 \u1604  \u1578 \u1581 \u1605 \u1610 \u1604  savedPlans \u1605 \u1606  localStorage:', e);\
+        \}\
+        const plan = savedPlans.find(p => p.id == id);\
+        if (!plan) return;\
+\
+        ['academicYear', 'date', 'subject', 'grade', 'lessonTitle', 'objectives'].forEach(field => \{\
+          const element = document.getElementById(field);\
+          if (element) element.value = plan[field] || '';\
+        \});\
+        openTab('create-tab');\
+        console.log(`\uc0\u1578 \u1605  \u1578 \u1581 \u1605 \u1610 \u1604  \u1575 \u1604 \u1582 \u1591 \u1577 : $\{id\}`);\
+      \} catch (error) \{\
+        console.error('\uc0\u1582 \u1591 \u1571  \u1601 \u1610  \u1578 \u1581 \u1605 \u1610 \u1604  \u1575 \u1604 \u1582 \u1591 \u1577 :', error);\
+        showError('\uc0\u1582 \u1591 \u1571  \u1601 \u1610  \u1578 \u1581 \u1605 \u1610 \u1604  \u1575 \u1604 \u1582 \u1591 \u1577 .');\
+      \}\
+    \}\
+\
+    // \uc0\u1605 \u1587 \u1581  \u1575 \u1604 \u1606 \u1605 \u1608 \u1584 \u1580 \
+    function resetForm() \{\
+      try \{\
+        console.log('\uc0\u1605 \u1587 \u1581  \u1575 \u1604 \u1606 \u1605 \u1608 \u1584 \u1580 ...');\
+        ['aiPrompt', 'academicYear', 'date', 'subject', 'grade', 'lessonTitle', 'objectives', 'activities', 'resources', 'assessment', 'homework'].forEach(id => \{\
+          const element = document.getElementById(id);\
+          if (element) element.value = '';\
+        \});\
+        document.getElementById('output').style.display = 'none';\
+        console.log('\uc0\u1578 \u1605  \u1605 \u1587 \u1581  \u1575 \u1604 \u1606 \u1605 \u1608 \u1584 \u1580 ');\
+        clearError();\
+      \} catch (error) \{\
+        console.error('\uc0\u1582 \u1591 \u1571  \u1601 \u1610  \u1605 \u1587 \u1581  \u1575 \u1604 \u1606 \u1605 \u1608 \u1584 \u1580 :', error);\
+        showError('\uc0\u1582 \u1591 \u1571  \u1601 \u1610  \u1605 \u1587 \u1581  \u1575 \u1604 \u1606 \u1605 \u1608 \u1584 \u1580 .');\
+      \}\
+    \}\
+\
+    // \uc0\u1583 \u1575 \u1604 \u1577  \u1604 \u1593 \u1585 \u1590  \u1585 \u1587 \u1575 \u1574 \u1604  \u1575 \u1604 \u1582 \u1591 \u1571 \
+    function showError(message) \{\
+      const errorDiv = document.getElementById('errorMessage');\
+      if (errorDiv) \{\
+        errorDiv.textContent = message;\
+        errorDiv.style.display = 'block';\
+      \}\
+      console.error('\uc0\u1582 \u1591 \u1571 :', message);\
+    \}\
+\
+    // \uc0\u1583 \u1575 \u1604 \u1577  \u1604 \u1573 \u1582 \u1601 \u1575 \u1569  \u1585 \u1587 \u1575 \u1574 \u1604  \u1575 \u1604 \u1582 \u1591 \u1571 \
+    function clearError() \{\
+      const errorDiv = document.getElementById('errorMessage');\
+      if (errorDiv) \{\
+        errorDiv.textContent = '';\
+        errorDiv.style.display = 'none';\
+      \}\
+    \}\
+\
+    // \uc0\u1578 \u1581 \u1605 \u1610 \u1604  \u1575 \u1604 \u1589 \u1601 \u1581 \u1577 \
+    document.addEventListener('DOMContentLoaded', () => \{\
+      try \{\
+        console.log('\uc0\u1580 \u1575 \u1585 \u1610  \u1578 \u1581 \u1605 \u1610 \u1604  \u1575 \u1604 \u1589 \u1601 \u1581 \u1577 ...');\
+        displaySavedPlans();\
+        clearError();\
+        console.log('\uc0\u1578 \u1605  \u1578 \u1581 \u1605 \u1610 \u1604  \u1575 \u1604 \u1589 \u1601 \u1581 \u1577  \u1576 \u1606 \u1580 \u1575 \u1581 ');\
+      \} catch (error) \{\
+        console.error('\uc0\u1582 \u1591 \u1571  \u1571 \u1579 \u1606 \u1575 \u1569  \u1578 \u1581 \u1605 \u1610 \u1604  \u1575 \u1604 \u1589 \u1601 \u1581 \u1577 :', error);\
+        showError('\uc0\u1582 \u1591 \u1571  \u1601 \u1610  \u1578 \u1581 \u1605 \u1610 \u1604  \u1575 \u1604 \u1589 \u1601 \u1581 \u1577 . \u1578 \u1581 \u1602 \u1602  \u1605 \u1606  \u1608 \u1581 \u1583 \u1577  \u1575 \u1604 \u1578 \u1581 \u1603 \u1605 .');\
+      \}\
+    \});\
+  </script>\
+</body>\
+</html>}
